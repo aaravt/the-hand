@@ -1,0 +1,76 @@
+ <html>
+  <head>
+    <title>hand To sign</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h1 class="btn btn-danger heading">sign to sign App</h1>
+      <br>
+<span>&#129304;</span>
+<span>&#9996;</span>
+<span>&#128076;</span>
+<span>&#128406;</span>
+<span>&#128400;</span>
+<span>&#128079;</span>
+      <br>
+      <br>
+      <p style="font-size: 22px;">Take your selfie to generate sign
+      	<br>
+        <b style="color: yellow">yo</b>
+        <br>
+        <b style="color: black"> victory</b>
+        <br>
+        <b style="color: red">ok</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam view - </label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick="take_snapshot();">capture image</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1-</label>
+          <p class="sign_name" id="result_sign_name"></p>
+          <p class="sign" id="update_sign"></p>
+
+          <label>Prediction 2-</label>
+          <p class="sign_name" id="result_sign_name2"></p>
+          <p class="sign" id="update_sign2"></p>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+<div id="result">
+</div>
+
+        <br><br>
+<button class="btn btn-info" onclick="check();">predict sign</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
